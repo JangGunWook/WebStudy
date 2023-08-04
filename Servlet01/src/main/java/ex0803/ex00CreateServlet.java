@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 	// (4) service 메소드 호출(요청 들어올때마다 호출 다능하다!)
 	// (5) server가 종료되면 destroy 호출
 
-	
-public class ex00CreateServlet extends HttpServlet {
+	@WebServlet("/Create")
+	public class ex00CreateServlet extends HttpServlet {
 	// 모든 Servlet은 HttpServlet을 상속받고 있다
 	// -> HttpServlet 부모클래스가 가지고 있는 메소드를 가져와서 사용가능하다
 	// -> 메소드 재정의(오버라이딩) 가능하다!
