@@ -32,7 +32,7 @@ public class ex02Table extends HttpServlet {
 						+ "</tr>"
 				+ "</table>"
 					
-				);
+				 );
 	}
 
 }
