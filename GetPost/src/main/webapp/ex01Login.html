@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!--
+		데이터 전송방식을 지정할 때 사용하는 attribute
+		: form태그의 method
+		: default값은 get방식 >> url에 데이터 포함(QueryString)
+		: post방식 >> url에 데이터 포함하지 않고 숨겨서 전송
+	-->
+	
+	<form action="Login" method="post">
+		<div>
+			ID : <input type="text" name = "id"">
+		</div>
+		<div>
+			PW : <input type="text" name = "pw">
+		</div>
+		<input type="submit" value="login">
+	</form>
+
+</body>
+</html>
