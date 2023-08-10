@@ -39,8 +39,9 @@ public class ex03UserInfo extends HttpServlet {
 		// 4. 화면 출력 
 		 out.print("<h3>직업 : " + job+"</h3>");
 		 out.print("<h3>성별 : " + gender+"</h3>");
+		// 4-1 취미출력방법(1) 
 		 out.print("<h3>취미 : " + Arrays.toString(hobby).replace("[","").replace("]","")+"</h3>");
-		 
+		// 4-1 취미출력방법(2) 
 		 out.print("<h3>취미 : ");
 		 for(int i=0; i<hobby.length; i++) {
 			 out.print(hobby[i] + " ");
